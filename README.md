@@ -9,4 +9,4 @@
 * Script to gather the metadata in EML (Ecological Metadata Language)
 * XML file product by the script
 
-3. Protocol in French can be find here : https://www.protocols.io/view/echantillonnage-des-parcelles-forestieres-permanen-36sgree
+2. Protocol in French can be find here : https://www.protocols.io/view/echantillonnage-des-parcelles-forestieres-permanen-36sgree
