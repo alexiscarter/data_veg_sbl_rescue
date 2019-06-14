@@ -4,6 +4,9 @@
 
 # Before load data I replace comma by point in the raw excel files
 
+# Year 1998 will be used as reference
+# Needed changes in the code of the subsequent year will be specified directly in the corresponding line of the code
+
 # Load package
 library(tidyverse)
 
@@ -76,4 +79,45 @@ understorey_1999 <- readxl::read_excel("raw/Donnees_brutes_1998.xls", sheet = 4)
   mutate(codeTaxa = str_sub(Espèce, -4)) %>% 
   select(-Espèce, station = Station, cover = 3) %>% 
   write_csv("raw_cleaned/understorey_1999.csv")
+
+
+
+
+
+
+# Reference on 1998
+# XXXX data ####
+# Mature trees
+# Transform in long format
+# Keep only 4 letters of the code before species names
+# Clean columns
+dhp_XXXX <- readxl::read_excel("raw/Donnees_brutes_XXXX.xls", sheet = 1)  %>%
+  gather(DHP, dhp, -Station, -Espèce, na.rm = TRUE) %>%
+  mutate(codeTaxa = str_sub(Espèce, -4)) %>% 
+  select(-Espèce, -DHP, station = Station) %>% 
+  write_csv("raw_cleaned/tree_XXXX.csv")
+
+# Saplings
+# Keep only 4 letters of the code before species names
+# Clean columns
+sapling_XXXX <- readxl::read_excel("raw/Donnees_brutes_XXXX.xls", sheet = 2) %>%
+  mutate(codeTaxa = str_sub(Espèce, -4)) %>% 
+  select(-Espèce, station = Station, count = Nombre) %>% 
+  write_csv("raw_cleaned/sapling_XXXX.csv")
+
+# Seedlings
+# Keep only 4 letters of the code before species names
+# Clean columns
+seedling_XXXX <- readxl::read_excel("raw/Donnees_brutes_XXXX.xls", sheet = 3) %>%
+  mutate(codeTaxa = str_sub(Espèce, -4)) %>% 
+  select(-Espèce, station = Station, count = 3) %>% 
+  write_csv("raw_cleaned/seedling_XXXX.csv")
+
+# Understorey plants
+# Keep only 4 letters of the code before species names
+# Clean columns
+understorey_XXXX <- readxl::read_excel("raw/Donnees_brutes_XXXX.xls", sheet = 4) %>%
+  mutate(codeTaxa = str_sub(Espèce, -4)) %>% 
+  select(-Espèce, station = Station, cover = 3) %>% 
+  write_csv("raw_cleaned/understorey_XXXX.csv")
 
