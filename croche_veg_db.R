@@ -41,7 +41,7 @@ seedling_1998 <- readxl::read_excel("raw/Donnees_brutes_1998.xls", sheet = 3) %>
   select(-Espèce, station = Station, count = 3) %>% 
   write_csv("raw_cleaned/seedling_1998.csv")
 
-# Understorey plants
+# understory plants
 # Keep only 4 letters of the code before species names
 # Clean columns
 understory_1998 <- readxl::read_excel("raw/Donnees_brutes_1998.xls", sheet = 4) %>%
@@ -76,7 +76,7 @@ seedling_1999 <- readxl::read_excel("raw/Donnees_brutes_1998.xls", sheet = 3) %>
   select(-Espèce, station = Station, count = 3) %>% 
   write_csv("raw_cleaned/seedling_1999.csv")
 
-# Understorey plants
+# understory plants
 # Keep only 4 letters of the code before species names
 # Clean columns
 understory_1999 <- readxl::read_excel("raw/Donnees_brutes_1998.xls", sheet = 4) %>%
@@ -116,7 +116,7 @@ seedling_2000 <- readxl::read_excel("raw/Donnees_brutes_2000.xls", sheet = 4) %>
   select(-Espèce, station = Station, count = 3) %>% 
   write_csv("raw_cleaned/seedling_2000.csv")
 
-# Understorey plants
+# understory plants
 # Keep only 4 letters of the code before species names
 # Clean columns
 understory_2000 <- readxl::read_excel("raw/Donnees_brutes_2000.xls", sheet = 5) %>%
@@ -151,13 +151,13 @@ seedling_2001 <- readxl::read_excel("raw/Donnees_brutes_2001.xls", sheet = 3) %>
   select(-Espèce, station = Station, count = 3) %>% 
   write_csv("raw_cleaned/seedling_2001.csv")
 
-# Understorey plants
+# understory plants
 # Keep only 4 letters of the code before species names
 # Clean columns
-understorey_2001 <- readxl::read_excel("raw/Donnees_brutes_2001.xls", sheet = 4) %>%
+understory_2001 <- readxl::read_excel("raw/Donnees_brutes_2001.xls", sheet = 4) %>%
   mutate(codeTaxa = str_sub(Espèce, -4)) %>% 
   select(-Espèce, station = Station, cover = 3) %>% 
-  write_csv("raw_cleaned/understorey_2001.csv")
+  write_csv("raw_cleaned/understory_2001.csv")
 
 # no 2002 data ####
 
@@ -198,13 +198,13 @@ seedling1_2003 <- readxl::read_excel("raw/Donnees_brutes_2003.xls", sheet = 5) %
   select(-Espèce, station = Station, count = 3) %>% 
   write_csv("raw_cleaned/seedling1_2003.csv")
 
-# Understorey plants
+# understory plants
 # Keep only 4 letters of the code before species names
 # Clean columns
-understorey_2003 <- readxl::read_excel("raw/Donnees_brutes_2003.xls", sheet = 6) %>%
+understory_2003 <- readxl::read_excel("raw/Donnees_brutes_2003.xls", sheet = 6) %>%
   mutate(codeTaxa = str_sub(Espèce, -4)) %>% 
   select(-Espèce, station = Station, cover = 3) %>% 
-  write_csv("raw_cleaned/understorey_2003.csv")
+  write_csv("raw_cleaned/understory_2003.csv")
 
 # 2004 data ####
 # Mature trees
@@ -243,13 +243,13 @@ seedling1_2004 <- readxl::read_excel("raw/Donnees_brutes_2004.xls", sheet = 5) %
   select(-Espèce, station = Station, count = 3) %>% 
   write_csv("raw_cleaned/seedling1_2004.csv")
 
-# Understorey plants
+# understory plants
 # Keep only 4 letters of the code before species names
 # Clean columns
-understorey_2004 <- readxl::read_excel("raw/Donnees_brutes_2004.xls", sheet = 6) %>%
+understory_2004 <- readxl::read_excel("raw/Donnees_brutes_2004.xls", sheet = 6) %>%
   mutate(codeTaxa = str_sub(Espèce, -4)) %>% 
   select(-Espèce, station = Station, cover = 3) %>% 
-  write_csv("raw_cleaned/understorey_2004.csv")
+  write_csv("raw_cleaned/understory_2004.csv")
 
 # 2005 data ####
 # Mature trees
@@ -288,13 +288,13 @@ seedling1_2005 <- readxl::read_excel("raw/Donnees_brutes_2005.xls", sheet = 5) %
   select(-Espèce, station = Station, count = 3) %>% 
   write_csv("raw_cleaned/seedling1_2005.csv")
 
-# Understorey plants
+# understory plants
 # Keep only 4 letters of the code before species names
 # Clean columns
-understorey_2005 <- readxl::read_excel("raw/Donnees_brutes_2005.xls", sheet = 7) %>% # Sheet 6 is not shrubs
+understory_2005 <- readxl::read_excel("raw/Donnees_brutes_2005.xls", sheet = 7) %>% # Sheet 6 is not shrubs
   mutate(codeTaxa = str_sub(Espèce, -4)) %>% 
   select(-Espèce, station = Station, cover = 3) %>% 
-  write_csv("raw_cleaned/understorey_2005.csv")
+  write_csv("raw_cleaned/understory_2005.csv")
 
 # 2016 data ####
 # Mature trees
@@ -332,13 +332,13 @@ seedling1_2016 <- readxl::read_excel("raw/BIO3753_CrocheData_2016.xlsx", sheet =
   rename(codeTaxa = codesp) %>% 
   write_csv("raw_cleaned/seedling1_2016.csv")
 
-# Understorey plants
+# understory plants
 # Keep only 4 letters of the code before species names
 # Clean columns
-understorey_2016 <- readxl::read_excel("raw/BIO3753_CrocheData_2016.xlsx", sheet = 6) %>%
+understory_2016 <- readxl::read_excel("raw/BIO3753_CrocheData_2016.xlsx", sheet = 6) %>%
   na.omit() %>%
   rename(codeTaxa = codesp) %>% 
-  write_csv("raw_cleaned/understorey_2016.csv")
+  write_csv("raw_cleaned/understory_2016.csv")
 
 # 2017 data ####
 # Mature trees
@@ -376,13 +376,13 @@ seedling1_2017 <- readxl::read_excel("raw/BIO3753_CrocheData_2017.xlsx", sheet =
   rename(codeTaxa = codesp) %>% 
   write_csv("raw_cleaned/seedling1_2017.csv")
 
-# Understorey plants
+# understory plants
 # Keep only 4 letters of the code before species names
 # Clean columns
-understorey_2017 <- readxl::read_excel("raw/BIO3753_CrocheData_2017.xlsx", sheet = 6) %>%
+understory_2017 <- readxl::read_excel("raw/BIO3753_CrocheData_2017.xlsx", sheet = 6) %>%
   na.omit() %>%
   rename(codeTaxa = codesp) %>% 
-  write_csv("raw_cleaned/understorey_2017.csv")
+  write_csv("raw_cleaned/understory_2017.csv")
 
 
 # 2018 data ####
@@ -421,17 +421,11 @@ seedling1_2018 <- readxl::read_excel("raw/BIO3753_CrocheData_2018.xlsx", sheet =
   rename(codeTaxa = codesp) %>% 
   write_csv("raw_cleaned/seedling1_2018.csv")
 
-# Understorey plants
+# understory plants
 # Keep only 4 letters of the code before species names
 # Clean columns
-understorey_2018 <- readxl::read_excel("raw/BIO3753_CrocheData_2018.xlsx", sheet = 6) %>%
+understory_2018 <- readxl::read_excel("raw/BIO3753_CrocheData_2018.xlsx", sheet = 6) %>%
   na.omit() %>%
   rename(codeTaxa = codesp) %>% 
-  write_csv("raw_cleaned/understorey_2018.csv")
-
-
-
-
-
-
+  write_csv("raw_cleaned/understory_2018.csv")
 
