@@ -37,10 +37,10 @@ seedling_1998 <- readxl::read_excel("raw/Donnees_brutes_1998.xls", sheet = 3) %>
 # Understorey plants
 # Keep only 4 letters of the code before species names
 # Clean columns
-understorey_1998 <- readxl::read_excel("raw/Donnees_brutes_1998.xls", sheet = 4) %>%
+understory_1998 <- readxl::read_excel("raw/Donnees_brutes_1998.xls", sheet = 4) %>%
   mutate(codeTaxa = str_sub(Espèce, -4)) %>% 
   select(-Espèce, station = Station, cover = 3) %>% 
-  write_csv("raw_cleaned/understorey_1998.csv")
+  write_csv("raw_cleaned/understory_1998.csv")
 
 # 1999 data ####
 # Mature trees
