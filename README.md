@@ -1,6 +1,11 @@
 *Ongoing data rescuing*
 
-## Vegetation data of the permanent plots of Lac Croche 
+## Vegetation data of the permanent plots of Lac Croche  
+  
+Usage note:  
+* Data has been recorded by undergraduate students during plant ecology field course while supervised by lecturer or teaching assistants
+* Seedling data are of uncertain quality at the species level
+
 This dataset contains the following vegetation measurements:
 * Diameter at breast height of trees (for trees with a DBH > 10 cm)
 * Count of saplings (trees with a DBH of 1 to 10 cm)
