@@ -429,3 +429,48 @@ understory_2018 <- readxl::read_excel("raw/BIO3753_CrocheData_2018.xlsx", sheet 
   rename(codeTaxa = codesp) %>% 
   write_csv("raw_cleaned/understory_2018.csv")
 
+# To be done
+# 2019 data ####
+# Mature trees
+# Transform in long format
+# Keep only 4 letters of the code before species names
+# Clean columns
+dhp_2019 <- readxl::read_excel("raw/BIO3753_CrocheData_2019.xlsx", sheet = 1)  %>%
+  na.omit() %>%
+  rename(codeTaxa = codesp) %>% 
+  write_csv("raw_cleaned/tree_2019.csv")
+
+# Saplings
+# Keep only 4 letters of the code before species names
+# Clean columns
+sapling2_2019 <- readxl::read_excel("raw/BIO3753_CrocheData_2019.xlsx", sheet = 3) %>%
+  na.omit() %>%
+  rename(codeTaxa = codesp) %>% 
+  write_csv("raw_cleaned/sapling2_2018.csv")
+
+sapling1_2019 <- readxl::read_excel("raw/BIO3753_CrocheData_2019.xlsx", sheet = 2) %>%
+  na.omit() %>%
+  rename(codeTaxa = codesp) %>% 
+  write_csv("raw_cleaned/sapling1_2019.csv")
+
+# Seedlings
+# Keep only 4 letters of the code before species names
+# Clean columns
+seedling2_2019 <- readxl::read_excel("raw/BIO3753_CrocheData_2019.xlsx", sheet = 4) %>%
+  na.omit() %>%
+  rename(codeTaxa = codesp) %>% 
+  write_csv("raw_cleaned/seedling2_2019.csv")
+
+seedling1_2019 <- readxl::read_excel("raw/BIO3753_CrocheData_2019.xlsx", sheet = 5) %>%
+  na.omit() %>%
+  rename(codeTaxa = codesp) %>% 
+  write_csv("raw_cleaned/seedling1_2019.csv")
+
+# understory plants
+# Keep only 4 letters of the code before species names
+# Clean columns
+understory_2019 <- readxl::read_excel("raw/BIO3753_CrocheData_2019.xlsx", sheet = 6) %>%
+  na.omit() %>%
+  rename(codeTaxa = codesp) %>% 
+  write_csv("raw_cleaned/understory_2019.csv")
+
