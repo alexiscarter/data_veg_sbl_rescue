@@ -299,7 +299,6 @@ understory_2005 <- readxl::read_excel("raw/Donnees_brutes_2005.xls", sheet = 7) 
 # 2016 data ####
 # Mature trees
 # Transform in long format
-# Keep only 4 letters of the code before species names
 # Clean columns
 dhp_2016 <- readxl::read_excel("raw/BIO3753_CrocheData_2016.xlsx", sheet = 1)  %>%
   na.omit() %>%
@@ -307,7 +306,6 @@ dhp_2016 <- readxl::read_excel("raw/BIO3753_CrocheData_2016.xlsx", sheet = 1)  %
   write_csv("raw_cleaned/tree_2016.csv")
 
 # Saplings
-# Keep only 4 letters of the code before species names
 # Clean columns
 sapling2_2016 <- readxl::read_excel("raw/BIO3753_CrocheData_2016.xlsx", sheet = 2) %>%
   na.omit() %>%
@@ -320,7 +318,6 @@ sapling1_2016 <- readxl::read_excel("raw/BIO3753_CrocheData_2016.xlsx", sheet = 
   write_csv("raw_cleaned/sapling1_2016.csv")
 
 # Seedlings
-# Keep only 4 letters of the code before species names
 # Clean columns
 seedling2_2016 <- readxl::read_excel("raw/BIO3753_CrocheData_2016.xlsx", sheet = 4) %>%
   na.omit() %>%
@@ -333,7 +330,6 @@ seedling1_2016 <- readxl::read_excel("raw/BIO3753_CrocheData_2016.xlsx", sheet =
   write_csv("raw_cleaned/seedling1_2016.csv")
 
 # understory plants
-# Keep only 4 letters of the code before species names
 # Clean columns
 understory_2016 <- readxl::read_excel("raw/BIO3753_CrocheData_2016.xlsx", sheet = 6) %>%
   na.omit() %>%
@@ -343,7 +339,6 @@ understory_2016 <- readxl::read_excel("raw/BIO3753_CrocheData_2016.xlsx", sheet 
 # 2017 data ####
 # Mature trees
 # Transform in long format
-# Keep only 4 letters of the code before species names
 # Clean columns
 dhp_2017 <- readxl::read_excel("raw/BIO3753_CrocheData_2017.xlsx", sheet = 1)  %>%
   na.omit() %>%
@@ -351,7 +346,6 @@ dhp_2017 <- readxl::read_excel("raw/BIO3753_CrocheData_2017.xlsx", sheet = 1)  %
   write_csv("raw_cleaned/tree_2017.csv")
 
 # Saplings
-# Keep only 4 letters of the code before species names
 # Clean columns
 sapling2_2017 <- readxl::read_excel("raw/BIO3753_CrocheData_2017.xlsx", sheet = 3) %>%
   na.omit() %>%
@@ -364,7 +358,6 @@ sapling1_2017 <- readxl::read_excel("raw/BIO3753_CrocheData_2017.xlsx", sheet = 
   write_csv("raw_cleaned/sapling1_2017.csv")
 
 # Seedlings
-# Keep only 4 letters of the code before species names
 # Clean columns
 seedling2_2017 <- readxl::read_excel("raw/BIO3753_CrocheData_2017.xlsx", sheet = 5) %>%
   na.omit() %>%
@@ -377,7 +370,6 @@ seedling1_2017 <- readxl::read_excel("raw/BIO3753_CrocheData_2017.xlsx", sheet =
   write_csv("raw_cleaned/seedling1_2017.csv")
 
 # understory plants
-# Keep only 4 letters of the code before species names
 # Clean columns
 understory_2017 <- readxl::read_excel("raw/BIO3753_CrocheData_2017.xlsx", sheet = 6) %>%
   na.omit() %>%
@@ -388,7 +380,6 @@ understory_2017 <- readxl::read_excel("raw/BIO3753_CrocheData_2017.xlsx", sheet 
 # 2018 data ####
 # Mature trees
 # Transform in long format
-# Keep only 4 letters of the code before species names
 # Clean columns
 dhp_2018 <- readxl::read_excel("raw/BIO3753_CrocheData_2018.xlsx", sheet = 1)  %>%
   na.omit() %>%
@@ -396,7 +387,6 @@ dhp_2018 <- readxl::read_excel("raw/BIO3753_CrocheData_2018.xlsx", sheet = 1)  %
   write_csv("raw_cleaned/tree_2018.csv")
 
 # Saplings
-# Keep only 4 letters of the code before species names
 # Clean columns
 sapling2_2018 <- readxl::read_excel("raw/BIO3753_CrocheData_2018.xlsx", sheet = 3) %>%
   na.omit() %>%
@@ -409,7 +399,6 @@ sapling1_2018 <- readxl::read_excel("raw/BIO3753_CrocheData_2018.xlsx", sheet = 
   write_csv("raw_cleaned/sapling1_2018.csv")
 
 # Seedlings
-# Keep only 4 letters of the code before species names
 # Clean columns
 seedling2_2018 <- readxl::read_excel("raw/BIO3753_CrocheData_2018.xlsx", sheet = 4) %>%
   na.omit() %>%
@@ -422,7 +411,6 @@ seedling1_2018 <- readxl::read_excel("raw/BIO3753_CrocheData_2018.xlsx", sheet =
   write_csv("raw_cleaned/seedling1_2018.csv")
 
 # understory plants
-# Keep only 4 letters of the code before species names
 # Clean columns
 understory_2018 <- readxl::read_excel("raw/BIO3753_CrocheData_2018.xlsx", sheet = 6) %>%
   na.omit() %>%
@@ -433,7 +421,6 @@ understory_2018 <- readxl::read_excel("raw/BIO3753_CrocheData_2018.xlsx", sheet 
 # 2019 data ####
 # Mature trees
 # Transform in long format
-# Keep only 4 letters of the code before species names
 # Clean columns
 dhp_2019 <- readxl::read_excel("raw/BIO3753_CrocheData_2019.xlsx", sheet = 1)  %>%
   na.omit() %>%
@@ -441,7 +428,6 @@ dhp_2019 <- readxl::read_excel("raw/BIO3753_CrocheData_2019.xlsx", sheet = 1)  %
   write_csv("raw_cleaned/tree_2019.csv")
 
 # Saplings
-# Keep only 4 letters of the code before species names
 # Clean columns
 sapling2_2019 <- readxl::read_excel("raw/BIO3753_CrocheData_2019.xlsx", sheet = 3) %>%
   na.omit() %>%
@@ -454,7 +440,6 @@ sapling1_2019 <- readxl::read_excel("raw/BIO3753_CrocheData_2019.xlsx", sheet = 
   write_csv("raw_cleaned/sapling1_2019.csv")
 
 # Seedlings
-# Keep only 4 letters of the code before species names
 # Clean columns
 seedling2_2019 <- readxl::read_excel("raw/BIO3753_CrocheData_2019.xlsx", sheet = 4) %>%
   na.omit() %>%
